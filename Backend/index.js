@@ -26,7 +26,6 @@ app.post('/register', async (req, res) => {
 
   let user = new User(req.body)
   let result = await user.save()
-  console.log(result)
   res.send(result)
 
 })
